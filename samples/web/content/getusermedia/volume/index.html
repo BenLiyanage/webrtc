@@ -19,10 +19,7 @@
   <title>Audio stream volume</title>
 
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../../../css/main.css" />
-  
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-  
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -51,12 +48,6 @@
         <div class="value"></div>
       </div>
     </div>
-
-    <p>The 'instant' volume changes approximately every 50ms; the 'slow' volume approximates the average volume over about a second.</p>
-    <p>Note that you will not hear your own voice; use the <a href="../audio">local audio rendering demo</a> for that.</p>
-    <p>The <code>audioContext</code>, <code>stream</code> and <code>soundMeter</code> variables are in global scope, so you can inspect them from the console.</p>
-
-    <a href="https://github.com/GoogleChrome/webrtc/tree/gh-pages/samples/web/content/getusermedia/volume" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
     <hr/>
     <div ng-controller="noisyTimesController">
         <h2>What's that sound?</h2>
@@ -75,7 +66,7 @@
   </div>
   
   <script src="js/soundmeter.js"></script>
-  <script src="js/main.js"></script>
+  <!--<script src="js/main.js"></script>-->
   <script src="js/webrtcApp.js"></script>
 </body>
 </html>

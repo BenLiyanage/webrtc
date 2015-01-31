@@ -13,7 +13,7 @@
 // instantaneous and time-decaying volumes available for inspection.
 // It also reports on the fraction of samples that were at or near
 // the top of the measurement range.
-function SoundMeter(context) {
+function SoundMeter(context, $scope) {
   this.context = context;
   this.instant = 0.0;
   this.slow = 0.0;
@@ -34,6 +34,7 @@ function SoundMeter(context) {
     that.instant = Math.sqrt(sum / input.length);
     that.slow = 0.95 * that.slow + 0.05 * that.instant;
     that.clip = clipcount / input.length;
+    $scope.$apply()
   };
 }
 
