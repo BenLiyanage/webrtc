@@ -28,3 +28,7 @@ color: #f4b400;
 meter#instant {
 color: #0f9d58;
 }
+
+/* BSL Styles */
+label { width:150px; display: inline-block;}
+div#parameters > div { height: 28px; margin: 0px 0px 10px; }
